@@ -1,5 +1,5 @@
 :root {
-  --pink: #0939e5;
+  --pink: #ff69b4;
   --bg: #0a0a0a;
   --shadow: 0 5px 5px rgba(3, 7, 7, 0.5);
 }
@@ -91,7 +91,7 @@ body {
 }
 
 .home {
-  background-image: url(img/Untitled\ design.png);
+  background-image: url(img/my.png);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
