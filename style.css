@@ -516,6 +516,11 @@ footer li {
     left: -13px;
     right: auto;
   }
+
+  .container{
+    padding: 30px 25px;
+    font-size: 22px;
+  }
 }
 
 /* tablet */
@@ -538,6 +543,10 @@ footer li {
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
+  }
+  .container{
+    padding: 20px 17px;
+    font-size: 15px;
   }
 }
 /* moblie phone */
