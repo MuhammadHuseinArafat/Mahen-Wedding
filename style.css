@@ -31,7 +31,8 @@ body {
 
 .hero h1,
 .hero h4,
-.hero p {
+.hero p,
+.hero h6 {
   text-shadow: var(--shadow);
 }
 
@@ -50,7 +51,7 @@ body {
   display: inline-block;
 }
 
-.hero p, h6 {
+.hero p {
   font-size: 1.4rem;
   background-color: navy transparent;
   backdrop-filter: blur(10px);
