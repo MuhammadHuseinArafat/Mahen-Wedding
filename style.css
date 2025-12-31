@@ -65,6 +65,35 @@ body {
   background-color: white;
   box-shadow: var(--shadow);
 }
+.hero container {
+  text-align: center;
+            background: rgba(255, 255, 255, 0.98);
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 20px;
+            border: 1px solid #d4a574;
+}
+.hero h6 {
+   font-family: 'Traditional Arabic', 'Arial', sans-serif;
+  font-size: 28px;
+            line-height: 2;
+            color: #5a4a3a;
+            padding: 20px;
+            border: 2px solid #d4a574;
+            border-radius: 10px;
+            background-color: #faf6f0;
+            font-weight: 600;
+            margin-bottom: 15px;
+}
+. hero h7 {
+   font-family: 'Traditional Arabic', 'Arial', sans-serif;
+  font-size: 18px;
+            color: #8b7355;
+            font-style: italic;
+            margin-top: 10px;
+}
 
 .hero a:hover {
   background-color: var(--pink);
