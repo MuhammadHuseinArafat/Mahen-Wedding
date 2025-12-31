@@ -545,8 +545,8 @@ footer li {
     height: 140px;
   }
   .container{
-    padding: 20px 17px;
-    font-size: 15px;
+    padding: 8%;
+    line-height: 1.8;
   }
 }
 /* moblie phone */
@@ -574,5 +574,10 @@ footer li {
 
   .timeline li .timeline-panel::after {
     top: 31px;
+  }
+  .container {
+    padding: 6%;
+    border-radius: 10px;
+    line-high:1.6;
   }
 }
