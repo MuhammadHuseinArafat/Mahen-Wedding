@@ -541,8 +541,8 @@ footer li {
   }
   /* 2. Lingkaran Foto diperkecil dan diletakkan di kiri */
   .timeline li .timeline-image {
-    width: 140px !important;
-    height: 140px !important;
+    width: 120px !important;
+    height: 120px !important;
     left: 25px !important;
     margin-left: 0 !important;
     transform: translateX(-50%) !important;
