@@ -273,7 +273,7 @@ body {
 }
 
 .timeline::before {
-  content: "";
+  content: '';
   top: 0;
   bottom: 0;
   position: absolute;
@@ -289,7 +289,7 @@ body {
 
 .timeline li::before,
 .timeline li::after {
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -321,9 +321,9 @@ body {
 }
 
 .timeline li .timeline-panel::before {
-  content: "";
+  content: '';
   display: inline-block;
-  position: absolute;
+  position: absolute; 
   border-top: 15px solid transparent;
   border-left: 15px solid #ccc;
   border-right: 0 solid #ccc;
@@ -333,7 +333,7 @@ body {
 }
 
 .timeline li .timeline-panel::after {
-  content: "";
+  content: '';
   position: absolute;
   display: inline-block;
   border-top: 14px solid transparent;
@@ -463,18 +463,24 @@ footer li {
   }
 
   .timeline::before {
-    left: 60px;
+    left: 40px;
   }
 
   .timeline li .timeline-image {
-    left: 15px;
-    margin-left: 45px;
-    top: 16px;
+    width: 100px;
+    height: 100px;
+    left: 40px;
+    margin-left: 0;
+    transform: translateX(-50%); /* Agar tepat di tengah garis */
+    background-size: cover !important;
+    background-position: center !important;
   }
 
   .timeline li.timeline-panel {
-    width: calc(100% - 200px);
-    float: right;
+    width: calc(100% - 100px); /* Sisa layar setelah dikurangi area garis */
+    float: right !important;
+    padding: 1.5rem;
+    text-align: left !important;
   }
 
   .timeline li .timeline-panel::before {
@@ -482,6 +488,7 @@ footer li {
     border-right-width: 15px;
     left: -15px;
     right: auto;
+    top: 30px;
   }
 
   .timeline li .timeline-panel::after {
@@ -489,9 +496,11 @@ footer li {
     border-right-width: 14px;
     left: -13px;
     right: auto;
+    top: 31px;
   }
-
-  
+  .timeline li.timeline-inverted .timeline-panel {
+    float: right !important;
+  } 
 }
 
 /* tablet */
@@ -514,8 +523,7 @@ footer li {
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
-  }
-  
+  }  
 }
 /* moblie phone */
 @media (max-width: 576px) {
@@ -527,22 +535,27 @@ footer li {
     margin: 3px;
   }
   .timeline li .timeline-image {
-    width: 80px;
-    height: 80px;
-    background-size: cover;
-    background-position: center;
+    width: 70px; /* Ukuran lingkaran lebih kecil di HP */
+    height: 70px;
+    left: 30px;
+  }
+  .timeline::before {
+    left: 30px;
   }
 
   .timeline li .timeline-panel {
-    width: 65%;
-    transform: translateX(-20px);
+    width: calc(100% - 80px);
+    padding: 1rem;
   }
 
   .timeline li .timeline-panel::before {
-    top: 30px;
+    top: 20px;
   }
 
   .timeline li .timeline-panel::after {
-    top: 31px;
+    top: 21px;
+  }
+  .timeline li .timeline-heading h3 {
+    font-size: 1.2rem;
   }
 }
