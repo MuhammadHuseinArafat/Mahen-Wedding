@@ -481,6 +481,7 @@ footer li {
     float: right !important;
     padding: 15px 20px !important;
     text-align: left !important;
+    margin-bottom: 30px !important;
   }
 
   .timeline li .timeline-panel::before {
@@ -521,13 +522,9 @@ footer li {
   }
 
   .timeline li .timeline-image {
-    width: 90px; 
-    height: 90px;
-  } 
-  .timeline li .timeline-panel {
-    width: calc(100% - 130px) !important;
-  }
-}
+    width: 140px;
+    height: 140px;
+  }  
 }
 /* moblie phone */
 @media (max-width: 576px) {
@@ -540,30 +537,26 @@ footer li {
   }
   
   .timeline::before {
-    left: 30px !important;
+    left: 25px !important;
   }
   /* 2. Lingkaran Foto diperkecil dan diletakkan di kiri */
-  /* .timeline li .timeline-image {
+  .timeline li .timeline-image {
     width: 120px !important;
     height: 120px !important;
     left: 25px !important;
     margin-left: 0 !important;
     transform: translateX(-50%) !important;
-  } */
-  .timeline li .timeline-image {
-    width: 70px !important; /* Foto diperkecil agar tidak makan tempat */
-    height: 70px !important;
-    left: 30px !important;
-    transform: translateX(-50%) !important;
   }
 
   /* 3. GESER TULISAN KE KANAN LEBIH JAUH */
   .timeline li .timeline-panel {
-    /* UBAH DI SINI: Jika ingin lebih ke kanan, kurangi persentasenya (misal jadi - 120px) */
-    width: calc(100% - 100px) !important; 
-    padding: 12px !important;
-    margin-right: 0 !important;
+    /* Kita kurangi lebar panelnya agar otomatis terdorong ke kanan.
+       Angka 170px ini akan menyisakan ruang luas di kiri foto */
+    width: calc(100% - 110px) !important; 
     float: right !important;
+    margin-right: 5px !important; /* Jarak aman dari pinggir layar kanan */
+    padding: 12px !important;
+    transform: none !important; /* Hilangkan transform bawaan agar tidak 'meleyot' */
   }
 
   /* 4. Paksa panah tetap menunjuk ke kiri foto */
@@ -572,7 +565,7 @@ footer li {
     right: auto !important;
     border-right-width: 15px !important;
     border-left-width: 0 !important;
-    top: 25px !important;
+    top: 15px !important;
   }
 
   .timeline li .timeline-panel::after {
@@ -580,9 +573,9 @@ footer li {
     right: auto !important;
     border-right-width: 14px !important;
     border-left-width: 0 !important;
-    top: 26px !important;
+    top: 16px !important;
   }
   .timeline li .timeline-heading h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
