@@ -477,10 +477,11 @@ footer li {
   }
 
   .timeline li.timeline-panel {
-    width: calc(100% - 100px); /* Sisa layar setelah dikurangi area garis */
+    width: calc(100% - 140px); /* Sisa layar setelah dikurangi area garis */
     float: right !important;
-    padding: 1.5rem;
+    padding: 15px 20px !important;
     text-align: left !important;
+    margin-bottom: 30px !important;
   }
 
   .timeline li .timeline-panel::before {
