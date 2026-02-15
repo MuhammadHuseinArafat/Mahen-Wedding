@@ -1,5 +1,6 @@
 :root {
   --pink: #ff69b4;
+  --dustyblue: #6C94BE; 
   --bg: #0a0a0a;
   --shadow: 0 5px 5px rgba(3, 7, 7, 0.5);
 }
@@ -61,7 +62,7 @@ body {
 }
 
 .hero a {
-  color: var(--pink);
+  color: var(--dustyblue);
   background-color: white;
   box-shadow: var(--shadow);
 }
@@ -70,7 +71,7 @@ body {
 
 
 .hero a:hover {
-  background-color: var(--pink);
+  background-color: var(--dustyblue);
   color: white;
 }
 
@@ -142,7 +143,7 @@ body {
 .gallery h2,
 .rsvp h2,
 .gifts h2 {
-  color: var(--pink);
+  color: var(--dustyblue);
   font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
@@ -176,7 +177,7 @@ body {
   font-family: "Sacramento";
   font-size: 2.4rem;
   font-weight: bold;
-  color: var(--pink);
+  color: var(--dustyblue);
 }
 
 .home .couple img {
@@ -197,7 +198,7 @@ body {
 
 .home .heart i {
   margin: auto;
-  color: var(--pink);
+  color: var(--dustyblue);
 }
 
 .info {
@@ -383,20 +384,20 @@ body {
 }
 
 .rsvp button {
-  background-color: var(--pink);
+  background-color: var(--dustyblue);
   color: white;
-  border: 1px solid var(--pink);
+  border: 1px solid var(--dustyblue);
 }
 
 .rsvp button:hover {
   background-color: white;
-  color: var(--pink);
+  color: var(--dustyblue);
   border: 1px solid white;
 }
 
 footer {
   padding: 0.4rem;
-  background-color: var(--pink);
+  background-color: var(--dustyblue);
   color: white;
 }
 
